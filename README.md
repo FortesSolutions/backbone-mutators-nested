@@ -58,7 +58,8 @@ require(['underscore', 'backbone', 'path/to/backbone.mutators'], function (_, Ba
 // CommonJS
 var _ = require('underscore');
 var Backbone = require('backbone');
-var Mutators = require('backbone.mutators');
+require("backbone-nested");
+var Mutators = require('backbone-mutators-nested');
 ```
 
 ### Vanilla JS
@@ -66,7 +67,8 @@ var Mutators = require('backbone.mutators');
 <!-- Vanilla javascript -->
 <script src="path/to/underscore.js"></script>
 <script src="path/to/backbone.js"></script>
-<script src="path/to/backbone.mutators.js"></script>
+<script src="path/to/backbone-nested.js"></script>
+<script src="path/to/backbone-mutators-nested.js"></script>
 <script>
 	console.log(Backbone.Mutators); // Backbone and the Mutators property are globals
 </script>
