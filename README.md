@@ -77,7 +77,7 @@ Some lines of code explain more then thousand words...
 
 ### Basic usage
 ```javascript
- var User = Backbone.Model.extend({
+ var User = Backbone.NestedModel.extend({
  	// Define mutator properties
     mutators: {
         fullname: function () {
@@ -99,7 +99,7 @@ Some lines of code explain more then thousand words...
 
 ### Override getters
 ```javascript
- var State = Backbone.Model.extend({
+ var State = Backbone.NestedModel.extend({
  	// Define mutator properties
     mutators: {
         status: function () {
@@ -120,7 +120,7 @@ Some lines of code explain more then thousand words...
 
 ### Use setters
 ```javascript
- var User = Backbone.Model.extend({
+ var User = Backbone.NestedModel.extend({
  	// Define mutator properties
     mutators: {
         fullname: {
@@ -151,7 +151,7 @@ Some lines of code explain more then thousand words...
 
 ### Catch model events
 ```javascript
- var User = Backbone.Model.extend({
+ var User = Backbone.NestedModel.extend({
     // Define mutator properties
     mutators: {
         fullname: {
@@ -199,7 +199,7 @@ Some lines of code explain more then thousand words...
 
 ### Silence mutator events (while keeping the model events fired)
 ```javascript
- var User = Backbone.Model.extend({
+ var User = Backbone.NestedModel.extend({
     // Define mutator properties
     mutators: {
         fullname: {
@@ -250,7 +250,7 @@ Some lines of code explain more then thousand words...
 
 ### Use mutated setters and call the original setter within
 ```javascript
- var Spicy = Backbone.Model.extend({
+ var Spicy = Backbone.NestedModel.extend({
     // Define mutator properties
     mutators: {
         iAcceptOnlyLowercaseStuff: {
@@ -273,7 +273,7 @@ Some lines of code explain more then thousand words...
 
 ### Define one getter / setter method
 ```javascript
- var User = Backbone.Model.extend({
+ var User = Backbone.NestedModel.extend({
     // Define mutator properties
     mutators: {
         fullname: function (key, value, options, set) {
@@ -295,7 +295,7 @@ Some lines of code explain more then thousand words...
 
 ### Define multiple mutators
 ```javascript
- var User = Backbone.Model.extend({
+ var User = Backbone.NestedModel.extend({
  	// Define mutator properties
     mutators: {
         fullname: {
@@ -330,7 +330,7 @@ non-syncing circumstances--for example, when providing this model to a template-
 from the JSON when sync is called (because you called the `sync()` or `save()` method), and will not
 be sent to the server.
 ```javascript
-var Model = Backbone.Model.extend({
+var Model = Backbone.NestedModel.extend({
   defaults:{
     firstName:"Iain",
     middleInit:"M",
