@@ -1,8 +1,10 @@
 ## backbone-mutators-nested
 
-Backbone plugin to override getters and setters with logic
+This is a clone of the [Backbone-Mutators](https://github.com/asciidisco/Backbone.Mutators) by asciidisco.
+This version specifically works with [backbone-nested](https://github.com/afeld/backbone-nested) models.
 
-Made compatible with the [backbone-nested](https://github.com/afeld/backbone-nested) models.
+
+Backbone plugin to override getters and setters with logic
 
 ## Build Status, Project Page, Annotated Source & Tests
 [![Build Status](https://secure.travis-ci.org/asciidisco/Backbone.Mutators.png?branch=master)](http://travis-ci.org/asciidisco/Backbone.Mutators)
