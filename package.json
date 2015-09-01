@@ -1,8 +1,8 @@
 {
-  "name": "Backbone.Mutators",
+  "name": "backbone-mutators-nested",
   "version": "0.4.5",
-  "description": "Backbone plugin to override getters and setters with logic",
-  "homepage": "http://asciidisco.github.com/Backbone.Mutators/index.html",
+  "description": "Backbone plugin to override getters and setters with logic. Specifically for Backbone.NestedModel.",
+  "homepage": "https://github.com/FortesSolutions/backbone-mutators-nested",
   "keywords": [
     "backbone",
     "plugin",
@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/asciidisco/Backbone.Mutators.git"
+    "url": "git://github.com/FortesSolutions/backbone-mutators-nested.git"
   },
   "author": "Sebastian Golasch <public@asciidisco.com>",
   "maintainers": [
