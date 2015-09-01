@@ -65,7 +65,7 @@ IN THE SOFTWARE.*/
 //    return User;
 // });
 //
-// var User = Backbone.Model.extend({
+// var User = Backbone.NestedModel.extend({
 //    mutators: {
 //        fullname: function () {
 //            return this.firstname + ' ' + this.lastname;
@@ -91,9 +91,9 @@ IN THE SOFTWARE.*/
 
     // extend backbones model prototype with the mutator functionality
     var Mutator     = function () {},
-        oldGet      = Backbone.Model.prototype.get,
-        oldSet      = Backbone.Model.prototype.set,
-        oldToJson   = Backbone.Model.prototype.toJSON;
+        oldGet      = Backbone.NestedModel.prototype.get,
+        oldSet      = Backbone.NestedModel.prototype.set,
+        oldToJson   = Backbone.NestedModel.prototype.toJSON;
 
     // This is necessary to ensure that Models declared without the mutators object do not throw and error
     Mutator.prototype.mutators = {};
@@ -199,7 +199,7 @@ IN THE SOFTWARE.*/
     };
 
     // extend the models prototype
-    _.extend(Backbone.Model.prototype, Mutator.prototype);
+    _.extend(Backbone.NestedModel.prototype, Mutator.prototype);
 
     // make mutators globally available under the Backbone namespace
     Backbone.Mutators = Mutator;
