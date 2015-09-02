@@ -40,15 +40,29 @@ $ volo add Backbone.Mutators
 
 ### NPM
 ```shell
-$ npm install Backbone.Mutators
+$ npm install "git://github.com/FortesSolutions/backbone-mutators-nested.git#master"
 ```
 
 ## Integration
 
 ### AMD
+package.json:
+```
+{
+  "name": "demo-client",
+  "version": "1.0.0",
+  "description": "xyz",
+  "private": true,
+  "dependencies": {
+    	"backbone": "1.2.2",
+	"backbone-nested": "2.0.4",
+	"backbone-mutators-nested": "git://github.com/FortesSolutions/backbone-mutators-nested.git#master",
+  }
+}
+```
 ```javascript
 // AMD
-require(['underscore', 'backbone', 'path/to/backbone.mutators'], function (_, Backbone, Mutators) {
+require(['underscore', 'backbone', 'backbone-mutators-nested'], function (_, Backbone, Mutators) {
   /* Do stuff with Backbone here */
 });
 ```
