@@ -28,15 +28,10 @@ The plugin has two dependencies, underscore.js and backbone.js
 
 ### Download
 You can directly download the
-[Development Version](https://raw.github.com/asciidisco/Backbone.Mutators/master/backbone.mutators.js)
+[Development Version](https://raw.github.com/FortesSolutions/backbone-mutators-nested/master/backbone.mutators.js)
 or the
-[Production Version](https://raw.github.com/asciidisco/Backbone.Mutators/master/backbone.mutators.min.js)
+[Production Version](https://raw.github.com/FortesSolutions/backbone-mutators-nested/master/backbone.mutators.min.js)
 from the root folder
-
-### VOLO
-```shell
-$ volo add Backbone.Mutators
-```
 
 ### NPM
 ```shell
